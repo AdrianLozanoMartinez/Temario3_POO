@@ -21,17 +21,25 @@ class Program
         int cogerColumna = multimensional.GetLength(1); //Cantidad total de columnas(1)
         Console.WriteLine($"Coge el total de columnas que hay: {cogerColumna}"); //Muestra 3
 
-        //Recorrer - Opción 1
+        //Recorrer - Opción 1 - RECOMENDADO
         for (int i = 0; i < multimensional.GetLength(0); i++) //Hasta un número menos del total de filas
         {
             for (int j = 0; j < multimensional.GetLength(1); j++) //Hasta un número menos del total de columnas
             {
-                
+                int arrayMultimensional = multimensional[i, j]; //Pasamos a una variable de tipo entero el array multidimensional
+                Console.Write(arrayMultimensional); //Mostramos cada fila sus columnas
             }
+            Console.WriteLine(); //Realizamos un salto para que se vea en la siguiente fila las
+                                 //columnas correspondientes
         }
 
+        Console.WriteLine();
 
-        //Recorrer - Opción 2
+        //Recorrer - Opción 2 - No recomendado
+        foreach(int number in multimensional)
+        {
+            Console.Write(number); //No sale igual forma que el for normal
+        }
 
 
     }
