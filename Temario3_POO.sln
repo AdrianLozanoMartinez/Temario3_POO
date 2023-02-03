@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Listas_enlazadas", "Temario
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pila", "Queue\Pila.csproj", "{8743037B-1E56-4D82-8702-8F06D12119AB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dictionary", "Dictionary\Dictionary.csproj", "{2EE7FD0B-EE4E-4CEC-B8A3-6153C4E0C985}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dictionario", "Dictionary\Dictionario.csproj", "{2EE7FD0B-EE4E-4CEC-B8A3-6153C4E0C985}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hash_Conjuntos", "Hash_Conjuntos\Hash_Conjuntos.csproj", "{5CFCBECE-0692-4933-843F-2A672F1D3F59}"
 EndProject
@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "grafo", "grafo\grafo.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Array_Multimensional", "Array_Multimensional\Array_Multimensional.csproj", "{6300B8E1-3253-479A-A23A-129EFBC4228C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array_Irregular", "Array_Irregular\Array_Irregular.csproj", "{D8D85383-5A69-49D1-B773-21D95136B49A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Array_Irregular", "Array_Irregular\Array_Irregular.csproj", "{D8D85383-5A69-49D1-B773-21D95136B49A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cola", "Cola\Cola.csproj", "{7EFD184A-52F2-42FB-A7FB-994C0FD71F81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{D8D85383-5A69-49D1-B773-21D95136B49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8D85383-5A69-49D1-B773-21D95136B49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8D85383-5A69-49D1-B773-21D95136B49A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EFD184A-52F2-42FB-A7FB-994C0FD71F81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EFD184A-52F2-42FB-A7FB-994C0FD71F81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EFD184A-52F2-42FB-A7FB-994C0FD71F81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EFD184A-52F2-42FB-A7FB-994C0FD71F81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,8 +4,13 @@ class Program
 {
     static void Main()
     {
+        //Vacío
         int[,] vacio = new int[0, 0];
 
+        //Profundidad
+        int[,,] empty = new int[0, 0, 0];  //[Fila,Columna,Profundidad]
+
+        //Declarar Array Multidimensional
         int[,] multimensional = new int[2, 3] { //[Filas(0),Columnas(1)]
             { 1, 2, 3 }, //1º FILA y 3 columnas 
             { 3, 4, 5 }  //2º FILA y 3 columnas 
