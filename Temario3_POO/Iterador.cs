@@ -1,11 +1,14 @@
-﻿namespace Listas_enlazadas;
-//FUNCIONAMIENTO POR DENTRO DE UNA LISTA ENLAZADA
-class ListaEnlazada<T>
+﻿using System.Collections;
+
+namespace Listas_enlazadas;
+//ES LA FORMA DE RECORRERLO. GETENUMERABLE SOLO CON FOREACH Y SOLO UNA VEZ, SI USAMOS MÁS ITERADORES SE DEBE USAR WHILE O FOR ETC...PERO SOLO UN GET Y UN FOREACH
+//FUNCIONAMIENTO POR DENTRO DE UNA LISTA ENLAZADA, 
+class Iterador<T> : IEnumerable<T>
 {
     private class Node<T> //Solo puede verse y usarse por la clase de arriba, que está dentro, el padre
     {
         //Si hacemos private atributo solo lo lee la clase Node no el padre (ListaEnlazada)
-        public T Datos { get; set; } //Se puede usar solo por la parte de arriba, no por otras clases
+        public T Datos { get; set; } //Se puede usar solo por la lase de arriba, no por otras clases
         public Node<T> Next { get; set; }
     }
 
@@ -18,7 +21,7 @@ class ListaEnlazada<T>
     private Node<T> head;
 
     //Constructor
-    public ListaEnlazada()
+    public Iterador()
     {
         head = null;
     }
@@ -84,6 +87,53 @@ class ListaEnlazada<T>
                 last = last.Next; 
             }
             last.Next = node;*/
+        }
+    }
+
+    public IEnumerator<T> GetEnumerator()
+    {
+        return new Iterador2(this); //this se refiere a dar la lista enlazada poque estamos dentro de una lista enlazada, nos da los datos de la lista
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator(); //Devuelve la funcion de arriba porque la llama en verdad
+    }
+
+    class Iterador2 : IEnumerator<T>
+    {
+        private Iterador<T> lista;
+        private Node<T> currentNode;
+        public T Current { get; private set; } //set para pode rmodificar el movenext y otros de abajo sino no deja hacer nada
+
+        object IEnumerator.Current => Current; //Devuelve Current de arriba porque es el viejo no generico al igual que la funcion de arriba
+       
+        public Iterador2(Iterador<T> lista) //pasado por parametro de la lista enlazada de arriba
+        {
+            this.lista = lista;
+            Reset();  
+        }
+
+        public void Dispose(){}
+
+        public bool MoveNext()
+        {
+            bool result = false;
+            //los datos están en el head, por eso lo usamos
+
+            if(currentNode != null) //lista pasado por parametro sino es nulo
+            {
+                result = true;
+                Current = currentNode.Datos; //Metemos el dato en current, metemos la cabeza 
+                currentNode = currentNode.Next; //Metemos los datos del siguiente de la lista
+            }
+
+            return result;
+        }
+
+        public void Reset()
+        {
+            currentNode = lista.head; //Inicializamos con la cabeza para empezar
         }
     }
 }

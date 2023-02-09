@@ -18,7 +18,7 @@ class Program
         //Recorrer - Opción 1
         for (int i = 0; i < arrayIrregular.Length; i++) //Filas (new)
         {
-            for(int j = 0; j < arrayIrregular[i].Length; j++) //Columnas (0,1,2,3)
+            for(int j = 0; j < arrayIrregular[i].Length; j++) //Columnas (0,1,2,3). De cada fila cogemos las columnas que hay
             {
                 int number = arrayIrregular[i][j]; //Pasamos a una variable de tipo entero el array irregular
                 Console.Write(number + "\t"); //Mostramos cada fila sus columnas

@@ -21,6 +21,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Array_Irregular", "Array_Ir
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cola", "Cola\Cola.csproj", "{7EFD184A-52F2-42FB-A7FB-994C0FD71F81}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "arbol_implementar", "arbol_implementar\arbol_implementar.csproj", "{3C22DEE9-8B12-4A5A-AEAC-154EF339EA97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colecciones", "Colecciones\Colecciones.csproj", "{D239C141-2DE6-4DC8-B2BA-D244A481C8D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{7EFD184A-52F2-42FB-A7FB-994C0FD71F81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EFD184A-52F2-42FB-A7FB-994C0FD71F81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EFD184A-52F2-42FB-A7FB-994C0FD71F81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C22DEE9-8B12-4A5A-AEAC-154EF339EA97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C22DEE9-8B12-4A5A-AEAC-154EF339EA97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C22DEE9-8B12-4A5A-AEAC-154EF339EA97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C22DEE9-8B12-4A5A-AEAC-154EF339EA97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D239C141-2DE6-4DC8-B2BA-D244A481C8D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D239C141-2DE6-4DC8-B2BA-D244A481C8D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D239C141-2DE6-4DC8-B2BA-D244A481C8D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D239C141-2DE6-4DC8-B2BA-D244A481C8D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

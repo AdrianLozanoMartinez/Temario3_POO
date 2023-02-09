@@ -1,5 +1,5 @@
 ﻿namespace Cola;
-
+//pila,cola y lista enlazada no se puede for con i, pero si while pero eliminando elementos
 class Program
 {
     static void Main()

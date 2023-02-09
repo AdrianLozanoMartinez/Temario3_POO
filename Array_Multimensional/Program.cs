@@ -40,7 +40,7 @@ class Program
 
         Console.WriteLine();
 
-        //Recorrer - Opción 2 - No recomendado
+        //Recorrer - Opción 2 - NO RECOMENDADO
         foreach(int number in multimensional)
         {
             Console.Write(number); //No sale igual forma que el for normal

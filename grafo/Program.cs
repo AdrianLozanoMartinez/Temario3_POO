@@ -31,7 +31,24 @@
             pg43
             se implementa un array bidemensional o multimensional regular o irregular
 
+            valor + infinito max.value
+            valor - infinito min.value
+            si es decimal double
 
+            GRAFOS no entra las definiciones de las diapositivas pero si dirigido y no dirigidos que entra en ejercicios
+
+            dirigido-asimetrico-regular-misma filas columnas
+            no dirigido lo contrario
+            linea simetrica amarillo, ambas partes son iguales, tanto en datos como en valor
+            con la linea amarilla sabremos si es simetrico o no, por si no especifica en el exam
+
+            si queremos coger mas dinero en el trayecto se pone menos infiniti
+            si queremos el menor recorrido cogemos el mas infinito
+
+            pensar al reves, si queremos un valor menor ponemos infiniti, si queremos un valor mayor cogemos el menos infinito
+
+            pg 44
+            out -> significa que solo es de lectura -> No estudiar
 
              */
         }
