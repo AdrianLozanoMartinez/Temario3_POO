@@ -72,18 +72,12 @@ class ListaEnlazada<T>
 
                 if (match != null) //Si no es nulo y coincide(coincidencia se ve en while)
                 {
+                    //Diría que es igual que match = match.Next; PREGUNTAR LA PROFE
                     before.Next = match.Next; //Metemos la siguiente posición en la anterior,
                                               //de esa manera eliminamos la anterior
                 }
 
             }
-            /*Node<T> last = head;
-
-            while (last.Next != null) 
-            {
-                last = last.Next; 
-            }
-            last.Next = node;*/
         }
     }
 }

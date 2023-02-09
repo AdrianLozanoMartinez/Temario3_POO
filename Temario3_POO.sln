@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cola", "Cola\Cola.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "arbol_implementar", "arbol_implementar\arbol_implementar.csproj", "{3C22DEE9-8B12-4A5A-AEAC-154EF339EA97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colecciones", "Colecciones\Colecciones.csproj", "{D239C141-2DE6-4DC8-B2BA-D244A481C8D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Colecciones", "Colecciones\Colecciones.csproj", "{D239C141-2DE6-4DC8-B2BA-D244A481C8D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Implementacion2_Lista_Enlazadas", "Implementacion2_Lista_Enlazadas\Implementacion2_Lista_Enlazadas.csproj", "{1F32910C-9872-40C6-AB1D-B20C98A54F13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{D239C141-2DE6-4DC8-B2BA-D244A481C8D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D239C141-2DE6-4DC8-B2BA-D244A481C8D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D239C141-2DE6-4DC8-B2BA-D244A481C8D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F32910C-9872-40C6-AB1D-B20C98A54F13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F32910C-9872-40C6-AB1D-B20C98A54F13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F32910C-9872-40C6-AB1D-B20C98A54F13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F32910C-9872-40C6-AB1D-B20C98A54F13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
