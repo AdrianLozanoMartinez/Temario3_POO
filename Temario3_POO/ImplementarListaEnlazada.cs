@@ -1,12 +1,12 @@
 ﻿namespace Listas_enlazadas;
 //FUNCIONAMIENTO POR DENTRO DE UNA LISTA ENLAZADA
-class ListaEnlazada<T>
+class ImplementarListaEnlazada<T>
 {
     private class Node<T> //Solo puede verse y usarse por la clase de arriba, que está dentro, el padre
     {
         //Si hacemos private atributo solo lo lee la clase Node no el padre (ListaEnlazada)
-        public T Datos { get; set; } //Se puede usar solo por la parte de arriba, no por otras clases
-        public Node<T> Next { get; set; }
+        public T Datos { get; set; } //Guarda datos. Se puede usar solo por la parte de arriba, no por otras clases
+        public Node<T> Next { get; set; } //NODO/Siguiente
     }
 
     //protected Node<T> Metodo() //tiene que coincidir el nivel de protección con el de arriba, pero private no vale, porque no es absesible
@@ -14,29 +14,30 @@ class ListaEnlazada<T>
 
     //}
 
-    //Atributo
-    private Node<T> head;
+    //Atributo/NODO
+    private Node<T> head; //Cabecera/inicio
 
     //Constructor
-    public ListaEnlazada()
+    public ImplementarListaEnlazada()
     {
         head = null;
     }
 
     public void Add(T item) //Elegimos si queremos por delante o detras, una fila/FIFO o pila/LIFO
     {
+        //NODO vacío que metemos el dato recibido
         Node<T> node = new Node<T> //Creamos una instancia donde se crea una lita que es como un array pero que no acaba
         {
             Datos = item //metemos a los Datos el item mandado por parámetro
         };
 
-        if (head == null) //Cuando el 1º está vacío
+        if (head == null) //Cuando el 1º/cabecera está vacío
         {
-            head = node;
+            head = node; //MEtemos el nodo del nuevo dato como cabecera al estar vacía esta
         }
-        else //Cuando no está vacío el 1º 
+        else //Cuando no está vacío el 1º/cabecera 
         {
-            Node<T> last = head; //Comenzamos siempre por el head
+            Node<T> last = head; //Creamos otro nodo donde metemos head de ese modo siempre comenzamos por el head
 
             while (last.Next != null) //Mientras el siguiente del last no sea nulo
             {

@@ -104,7 +104,7 @@ class Iterador<T> : IEnumerable<T>
     {
         private Iterador<T> lista;
         private Node<T> currentNode;
-        public T Current { get; private set; } //set para pode rmodificar el movenext y otros de abajo sino no deja hacer nada
+        public T Current { get; private set; } //set para poder modificar el movenext y otros de abajo sino no deja hacer nada
 
         object IEnumerator.Current => Current; //Devuelve Current de arriba porque es el viejo no generico al igual que la funcion de arriba
        

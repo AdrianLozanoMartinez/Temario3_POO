@@ -26,3 +26,20 @@ class Program
         }
     }
 }
+
+
+
+
+
+
+
+
+
+/*Tipado -> no se usa en parametro, pero si en foreach, metodo. En javascript da igual cambiar de tipo a una variable pero en c# no
+ var algo; da error porque no se sabe el valor, hay que darle valor, default no se puede porque es el vakir oir defecto del valor, sin se sabe que valor es...
+
+ 
+ var a = new { Cantidad = 10 }; -> 1º variable
+    a = new { Cantidad = 5 }; -> Variable que sobreescribe
+
+ var d = new { Cantidad = 4}; -> Nueva variable*/

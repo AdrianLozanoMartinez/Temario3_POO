@@ -1,11 +1,9 @@
-﻿namespace Temario3_POO;
+﻿namespace Listas;
 
-class Lista_Y_ListaEnlazada
+class Program
 {
     static void Main()
     {
-        /////////////LISTA
-
         /*Igual que array pero se puede añadir y quitar datos fácilmente y cuando se quiera
           Tiene que ir dentro de un método
 
@@ -39,14 +37,5 @@ class Lista_Y_ListaEnlazada
 
 
         Console.WriteLine(count);
-
-/////////////LISTA ENLAZADA
-        //pila,cola y LISTA ENLAZADAS NO se puede FOR CON I, pero si while pero eliminando elementos
-        LinkedList<int> numbers2 = new LinkedList<int>(new[] { 1, 2, 3});
-
-        foreach(int number in numbers2)
-        {
-            Console.Write(number);
-        }
     }
 }
