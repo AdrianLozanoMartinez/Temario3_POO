@@ -23,7 +23,7 @@ class Program
         var ordenarRaizCuadraada = numeros.Where(x => x % 2 == 0) //Debe ser un bool
                                    .OrderByDescending(x => x)
                                    .Select(x => Math.Sqrt(x));
-                                //.Select(Math.Sqrt); -> Funciokanria si fuera mismo tipo, al ser un aprametro x igual que en x
+                                //.Select(Math.Sqrt); -> Funcionaria si fuera mismo tipo, al ser un aprametro x igual que en x
 
          Console.WriteLine($"Ordenar raiz cuadrada con funcion: {ordenarRaizCuadraada}"); //hacer foreach
 
